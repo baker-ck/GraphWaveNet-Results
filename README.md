@@ -1,6 +1,6 @@
 ## GraphWaveNet (GWNet) Baseline Model Results
 
-This folder contains the trained baseline model and test results. The implementation is based on the IJCAI 2019 paper “Graph WaveNet for Deep Spatial-Temporal Graph Modeling” (https://arxiv.org/abs/1906.00121), with the following citation:
+This folder contains the trained GWNet model and test results. The implementation is based on the IJCAI 2019 paper “Graph WaveNet for Deep Spatial-Temporal Graph Modeling” (https://arxiv.org/abs/1906.00121), with the following citation:
 
 ```bibtex
 @article{wu2019graph,
