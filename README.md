@@ -14,7 +14,7 @@ This folder contains results for a trained GWNet model and its incremental impro
 - Python:  3.9
 - PyTorch: 1.10.2
 - Device: CPU (Apple Silicon)
-- Conda environment exported in `environment.yml`
+- Conda environment exported in `environment.yaml`
 
 ### Results
 #### Model: Graph WaveNet (Wu et al., 2019)
