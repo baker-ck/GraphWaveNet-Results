@@ -26,9 +26,9 @@ The implementation for the latter is based on the arXiv 2019 paper “Incrementa
 
 ### Files
 - `best_model.pth`: PyTorch checkpoint of the trained model
-- `test.csv`: Test set predictions and ground truth
-- `metrics.csv`: Evaluation metrics on the test set
-- `args.pkl`: Pickled Python object storing the full set of training arguments
+- `test.csv`: test set predictions and ground truth
+- `metrics.csv`: evaluation metrics on the test set
+- `args.pkl`: pickled Python object storing the full set of training arguments
   (model architecture, optimisation hyperparameters, data settings, random seed)
   used to produce `best_model.pth`
 
@@ -37,3 +37,30 @@ The implementation for the latter is based on the arXiv 2019 paper “Incrementa
 - PyTorch: 1.10.2
 - Device: MPS (Apple Silicon)
 - Conda environment exported in `environment.yml`
+
+### Results
+#### Model: Graph WaveNet (Wue et al., 2019)
+- Early stopping: enabled
+- Best epoch: 
+- Training stopped at: 
+- Criterion: validation loss
+
+| Split      | MAE       | MAPE      | RMSE      |
+| ---------- | --------- | --------- | --------- |
+| Train      |      |      |      |
+| Validation |      |     |     |
+| Test       | **t.ttt** | **t.ttt** | **t.ttt** |
+
+#### Model: Graph WaveNet (Schleifer et al., 2019)
+- Early stopping: enabled
+- Best epoch: 38
+- Training stopped at: 58
+- Criterion: validation loss
+
+| Split      | MAE       | MAPE      | RMSE      |
+| ---------- | --------- | --------- | --------- |
+| Train      | 2.734     | 0.074     | 5.568     |
+| Validation | 2.739     | 0.076     | 5.341     |
+| Test       | **3.025** | **0.083** | **6.061** |
+
+
