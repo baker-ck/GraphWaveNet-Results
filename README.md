@@ -2,28 +2,6 @@
 
 This folder contains results for a trained GWNet model and its incremental improvement. 
 
-The implementation for the former is based on the IJCAI 2019 paper “Graph WaveNet for Deep Spatial-Temporal Graph Modeling” (https://arxiv.org/abs/1906.00121), with the following citation:
-
-```bibtex
-@article{wu2019graph,
-  title={Graph wavenet for deep spatial-temporal graph modeling},
-  author={Wu, Zonghan and Pan, Shirui and Long, Guodong and Jiang, Jing and Zhang, Chengqi},
-  journal={arXiv preprint arXiv:1906.00121},
-  year={2019}
-}
-```
-
-The implementation for the latter is based on the arXiv 2019 paper “Incrementally Improving Graph WaveNet Performance on Traffic Prediction” (https://arxiv.org/abs/1912.07390), with the following citation:
-
-```bibtex
-"@article{shleifer2019incrementally,
-  title={Incrementally improving graph wavenet performance on traffic prediction},
-  author={Shleifer, Sam and McCreery, Clara and Chitters, Vamsi},
-  journal={arXiv preprint arXiv:1912.07390},
-  year={2019}
-}"
-```
-
 ### Files
 - `best_model.pth`: PyTorch checkpoint of the trained model
 - `test.csv`: test set predictions and ground truth
@@ -35,21 +13,21 @@ The implementation for the latter is based on the arXiv 2019 paper “Incrementa
 ### Environment
 - Python:  3.9
 - PyTorch: 1.10.2
-- Device: MPS (Apple Silicon)
+- Device: CPU (Apple Silicon)
 - Conda environment exported in `environment.yml`
 
 ### Results
-#### Model: Graph WaveNet (Wue et al., 2019)
+#### Model: Graph WaveNet (Wu et al., 2019)
 - Early stopping: enabled
-- Best epoch: 
-- Training stopped at: 
+- Best epoch: 64
+- Training stopped at: 84
 - Criterion: validation loss
 
 | Split      | MAE       | MAPE      | RMSE      |
 | ---------- | --------- | --------- | --------- |
-| Train      |      |      |      |
-| Validation |      |     |     |
-| Test       | **t.ttt** | **t.ttt** | **t.ttt** |
+| Train      |    T.BA  |   T.BA   |   T.BA   |
+| Validation |    T.BA  |   T.BA  |   T.BA  |
+| Test       | **T.BA** | **T.BA** | **T.BA** |
 
 #### Model: Graph WaveNet (Schleifer et al., 2019)
 - Early stopping: enabled
@@ -63,4 +41,29 @@ The implementation for the latter is based on the arXiv 2019 paper “Incrementa
 | Validation | 2.739     | 0.076     | 5.341     |
 | Test       | **3.025** | **0.083** | **6.061** |
 
+
+
+### References
+
+The implementation for GWNet (Wu et. al) is based on the IJCAI 2019 paper “Graph WaveNet for Deep Spatial-Temporal Graph Modeling” (https://arxiv.org/abs/1906.00121), with the following citation:
+
+```bibtex
+@article{wu2019graph,
+  title={Graph wavenet for deep spatial-temporal graph modeling},
+  author={Wu, Zonghan and Pan, Shirui and Long, Guodong and Jiang, Jing and Zhang, Chengqi},
+  journal={arXiv preprint arXiv:1906.00121},
+  year={2019}
+}
+```
+
+The implementation for GWNet (Schleifer et al.) is based on the arXiv 2019 paper “Incrementally Improving Graph WaveNet Performance on Traffic Prediction” (https://arxiv.org/abs/1912.07390), with the following citation:
+
+```bibtex
+"@article{shleifer2019incrementally,
+  title={Incrementally improving graph wavenet performance on traffic prediction},
+  author={Shleifer, Sam and McCreery, Clara and Chitters, Vamsi},
+  journal={arXiv preprint arXiv:1912.07390},
+  year={2019}
+}"
+```
 
