@@ -59,11 +59,11 @@ The implementation for GWNet (Wu et. al) is based on the IJCAI 2019 paper “Gra
 The implementation for GWNet (Schleifer et al.) is based on the arXiv 2019 paper “Incrementally Improving Graph WaveNet Performance on Traffic Prediction” (https://arxiv.org/abs/1912.07390), with the following citation:
 
 ```bibtex
-"@article{shleifer2019incrementally,
+@article{shleifer2019incrementally,
   title={Incrementally improving graph wavenet performance on traffic prediction},
   author={Shleifer, Sam and McCreery, Clara and Chitters, Vamsi},
   journal={arXiv preprint arXiv:1912.07390},
   year={2019}
-}"
+}
 ```
 
