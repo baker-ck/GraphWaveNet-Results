@@ -13,23 +13,19 @@ GWNet-results/
 │   └── `best_model.pth`: PyTorch checkpoint of the trained model
 │   └── `test.csv`: test set predictions and ground truth
 │   └── `metrics.csv`: evaluation metrics on the test set
-│   └── `args.pkl`: pickled Python object storing the full set of training arguments
-  (model architecture, optimisation hyperparameters, data settings, random seed)
-  used to produce `best_model.pth`
+│   └── `args.pkl`: pickled Python object storing the full set of training arguments used to produce `best_model.pth`
 ├── Schleifer/
 │   └── `best_model.pth`: PyTorch checkpoint of the trained model
 │   └── `test.csv`: test set predictions and ground truth
 │   └── `metrics.csv`: evaluation metrics on the test set
-│   └── `args.pkl`: pickled Python object storing the full set of training arguments
-  (model architecture, optimisation hyperparameters, data settings, random seed)
-  used to produce `best_model.pth`
+│   └── `args.pkl`: pickled Python object storing the full set of training arguments used to produce `best_model.pth`
 └── requirements.txt
 └── environment.yaml
 ```
 ### Environment
 - Python:  3.9
 - PyTorch: 1.10.2
-- Device: CPU (Apple Silicon)
+- Device: CPU (Apple Silicon, 8GB Unified Memory)
 - Conda environment exported in `environment.yaml`
 
 ### Results
