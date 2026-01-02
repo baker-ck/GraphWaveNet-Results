@@ -9,30 +9,23 @@ We used the publicly available GWNet () codebases as our training frameworks. No
 ```
 GWNet-results/
 ├── README.md
-├── electricity/
-│   └── model-electricity-3.pt
-|   └── model-electricity-sampling-3.pt
-├── exchange-rate/
-│   └── model-exchange-rate-3.pt
-|   └── model-exchange-rate-sampling-3.pt
-├── solar/
-│   └── model-solar-3.pt
-|   └── model-solar-sampling-3.pt
-├── traffic/
-│   └── model-traffic-3.pt
-|   └── model-traffic-sampling-3.pt
+├── Wu/
+│   └── `best_model.pth`: PyTorch checkpoint of the trained model
+│   └── `test.csv`: test set predictions and ground truth
+│   └── `metrics.csv`: evaluation metrics on the test set
+│   └── `args.pkl`: pickled Python object storing the full set of training arguments
+  (model architecture, optimisation hyperparameters, data settings, random seed)
+  used to produce `best_model.pth`
+├── Schleifer/
+│   └── `best_model.pth`: PyTorch checkpoint of the trained model
+│   └── `test.csv`: test set predictions and ground truth
+│   └── `metrics.csv`: evaluation metrics on the test set
+│   └── `args.pkl`: pickled Python object storing the full set of training arguments
+  (model architecture, optimisation hyperparameters, data settings, random seed)
+  used to produce `best_model.pth`
 └── requirements.txt
 └── environment.yaml
 ```
-
-### Files
-- `best_model.pth`: PyTorch checkpoint of the trained model
-- `test.csv`: test set predictions and ground truth
-- `metrics.csv`: evaluation metrics on the test set
-- `args.pkl`: pickled Python object storing the full set of training arguments
-  (model architecture, optimisation hyperparameters, data settings, random seed)
-  used to produce `best_model.pth`
-
 ### Environment
 - Python:  3.9
 - PyTorch: 1.10.2
