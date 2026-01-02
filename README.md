@@ -2,6 +2,29 @@
 
 This folder contains results for a trained GWNet model and its incremental improvement. 
 
+### Implementation notes
+We used the publicly available GWNet () codebases as our training frameworks. No changes were made to model architectures, loss functions or optimisations. 
+
+### Repo structure
+```
+GWNet-results/
+├── README.md
+├── electricity/
+│   └── model-electricity-3.pt
+|   └── model-electricity-sampling-3.pt
+├── exchange-rate/
+│   └── model-exchange-rate-3.pt
+|   └── model-exchange-rate-sampling-3.pt
+├── solar/
+│   └── model-solar-3.pt
+|   └── model-solar-sampling-3.pt
+├── traffic/
+│   └── model-traffic-3.pt
+|   └── model-traffic-sampling-3.pt
+└── requirements.txt
+└── environment.yaml
+```
+
 ### Files
 - `best_model.pth`: PyTorch checkpoint of the trained model
 - `test.csv`: test set predictions and ground truth
